@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212; /* צבע רקע כהה */
+    color: #ffffff;
+}
+
+header {
+    background-color: #1e1e1e;
+    padding: 30px 20px;
+    text-align: center;
+    border-bottom: 2px solid #ff4757; /* פס צבעוני עדין למטה */
+}
+
+.header-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.header-content p {
+    color: #aaaaaa;
+    margin-bottom: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.category-btn {
+    background-color: #2f3542;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.category-btn:hover, .category-btn.active {
+    background-color: #ff4757; /* צבע כפתור פעיל/מעבר עכבר */
+}
+
+main {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.store-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.item-card {
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+    border: 1px solid #333;
+}
+
+.item-card:hover {
+    transform: translateY(-5px);
+}
+
+.item-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.item-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.item-info h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 1.2rem;
+    color: #ff4757;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.buy-btn {
+    display: block;
+    background-color: #2ed573; /* כפתור קנייה ירוק ובולט */
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.buy-btn:hover {
+    background-color: #25b35f;
+}
+
+.hide {
+    display: none;
+}

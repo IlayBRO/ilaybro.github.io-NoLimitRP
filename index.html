@@ -3,79 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blackzone Roleplay</title>
+    <title>NoLimitRP Store</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <header class="hero-section">
-        <div class="top-bar">
-            <div class="server-info" onclick="copyIP()">
-                <img src="https://cdn-icons-png.flaticon.com/512/1077/1077063.png" alt="User Icon" class="icon">
-                <div>
-                    <strong>Blackzone | Serious Roleplay</strong>
-                    <span id="copy-text">Click to Copy IP</span>
-                </div>
-            </div>
-
-            <div class="right-links">
-                <a href="#" class="login-btn">Login</a>
-                <a href="https://discord.gg/YOUR_LINK" target="_blank" class="discord-info">
-                    <div>
-                        <strong>Join our Discord</strong>
-                        <span>Click to Join</span>
-                    </div>
-                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968756.png" alt="Discord" class="icon">
-                </a>
-            </div>
+    <header class="hero">
+        <div class="top-nav">
+            <span class="copy-link" onclick="copySiteLink()">Copy site link</span>
         </div>
-
+        
         <div class="center-logo">
-            <img src="https://via.placeholder.com/150/00ffff/000000?text=LOGO" alt="Server Logo">
+            <img src="logo_26.png" alt="NoLimitRP Logo" class="server-logo">
+        </div>
+        
+        <div class="cyan-bar">
+            <p class="announcement">מופעיל על כלל האתר 10% הנחה שבוע טוב ומבורך - NoLimitRP</p>
+            <div class="payment-icons">
+                <img src="paypal.png" alt="PayPal">
+                <img src="visa.png" alt="Visa">
+                <img src="mastercard.png" alt="Mastercard">
+                <img src="amex.png" alt="AMEX">
+            </div>
         </div>
     </header>
+    
+    <main>
+        </main>
 
-    <div class="announcement-bar">
-        ברוכים הבאים לחנות של Blackzone - מופעל על כלל האתר 10% הנחה!
-    </div>
-
-    <main class="categories-container">
-        <a href="#cars" class="category-card">
-            <img src="https://via.placeholder.com/150/2a2a2a/00ffff?text=CARS" alt="Cars">
-            <h3>RolePlay<br>CARS</h3>
-        </a>
-        
-        <a href="#premium" class="category-card">
-            <img src="https://via.placeholder.com/150/2a2a2a/ffff00?text=VIP" alt="Premium">
-            <h3>RolePlay<br>PREMIUM</h3>
-        </a>
-
-        <a href="#peds" class="category-card">
-            <img src="https://via.placeholder.com/150/2a2a2a/00ff00?text=PEDS" alt="Peds">
-            <h3>RolePlay<br>PEDS</h3>
-        </a>
-
-        <a href="#houses" class="category-card">
-            <img src="https://via.placeholder.com/150/2a2a2a/ff0000?text=HOUSE" alt="House">
-            <h3>RolePlay<br>HOUSE</h3>
-        </a>
-    </main>
-
-    <section class="bottom-section">
-        <div class="description">
-            <h2>אודות השרת</h2>
-            <p>ברוכים הבאים ל-Blackzone Roleplay! כאן תוכלו למצוא את כל מה שצריך כדי לשדרג את הדמות שלכם, מרכבי יוקרה ועד לבתים המפוארים ביותר בעיר. כל תרומה עוזרת לנו לתחזק את השרת ולהביא לכם את החוויה הטובה ביותר.</p>
-        </div>
-        <div class="recent-payments">
-            <h2>תרומות אחרונות</h2>
-            <ul class="payments-list">
-                <li>IlayBRO - קנה רכב ספורט</li>
-                <li>Player2 - קנה VIP</li>
-                <li>Player3 - קנה וילה</li>
-            </ul>
-        </div>
-    </section>
-
-    <script src="script.js"></script>
+    <script>
+        function copySiteLink() {
+            const el = document.createElement('textarea');
+            el.value = window.location.href; // העתקת קישור האתר הנוכחי
+            document.body.appendChild(el);
+            el.select();
+            document.execCommand('copy');
+            document.body.removeChild(el);
+            alert('קישור האתר הועתק!'); // הצגת הודעת אישור
+        }
+    </script>
 </body>
 </html>

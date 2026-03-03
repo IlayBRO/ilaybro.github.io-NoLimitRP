@@ -3,45 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>חנות השרת - FiveM</title>
+    <title>Blackzone Roleplay</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <h1>חנות השרת שלנו</h1>
-            <p>תמכו בשרת ושדרגו את חוויית המשחק שלכם</p>
+
+    <header class="hero-section">
+        <div class="top-bar">
+            <div class="server-info" onclick="copyIP()">
+                <img src="https://cdn-icons-png.flaticon.com/512/1077/1077063.png" alt="User Icon" class="icon">
+                <div>
+                    <strong>Blackzone | Serious Roleplay</strong>
+                    <span id="copy-text">Click to Copy IP</span>
+                </div>
+            </div>
+
+            <div class="right-links">
+                <a href="#" class="login-btn">Login</a>
+                <a href="https://discord.gg/YOUR_LINK" target="_blank" class="discord-info">
+                    <div>
+                        <strong>Join our Discord</strong>
+                        <span>Click to Join</span>
+                    </div>
+                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968756.png" alt="Discord" class="icon">
+                </a>
+            </div>
         </div>
-        <nav id="category-nav">
-            <button class="category-btn active" onclick="filterItems('all')">הכל</button>
-            <button class="category-btn" onclick="filterItems('vehicles')">רכבים</button>
-            <button class="category-btn" onclick="filterItems('houses')">בתים</button>
-        </nav>
+
+        <div class="center-logo">
+            <img src="https://via.placeholder.com/150/00ffff/000000?text=LOGO" alt="Server Logo">
+        </div>
     </header>
 
-    <main>
-        <div class="store-grid" id="store-grid">
-            
-            <div class="item-card vehicles">
-                <img src="https://via.placeholder.com/300x150/2a2a2a/ffffff?text=תמונת+רכב" alt="רכב ספורט">
-                <div class="item-info">
-                    <h3>רכב ספורט אקסקלוסיבי</h3>
-                    <p class="price">₪50.00</p>
-                    <a href="https://paypal.me/YOUR_LINK" target="_blank" class="buy-btn">קנה עכשיו דרך PayPal</a>
-                </div>
-            </div>
+    <div class="announcement-bar">
+        ברוכים הבאים לחנות של Blackzone - מופעל על כלל האתר 10% הנחה!
+    </div>
 
-            <div class="item-card houses">
-                <img src="https://via.placeholder.com/300x150/2a2a2a/ffffff?text=תמונת+בית" alt="וילה">
-                <div class="item-info">
-                    <h3>וילה בווינווד</h3>
-                    <p class="price">₪120.00</p>
-                    <a href="https://paypal.me/YOUR_LINK" target="_blank" class="buy-btn">קנה עכשיו דרך PayPal</a>
-                </div>
-            </div>
+    <main class="categories-container">
+        <a href="#cars" class="category-card">
+            <img src="https://via.placeholder.com/150/2a2a2a/00ffff?text=CARS" alt="Cars">
+            <h3>RolePlay<br>CARS</h3>
+        </a>
+        
+        <a href="#premium" class="category-card">
+            <img src="https://via.placeholder.com/150/2a2a2a/ffff00?text=VIP" alt="Premium">
+            <h3>RolePlay<br>PREMIUM</h3>
+        </a>
 
-        </div>
+        <a href="#peds" class="category-card">
+            <img src="https://via.placeholder.com/150/2a2a2a/00ff00?text=PEDS" alt="Peds">
+            <h3>RolePlay<br>PEDS</h3>
+        </a>
+
+        <a href="#houses" class="category-card">
+            <img src="https://via.placeholder.com/150/2a2a2a/ff0000?text=HOUSE" alt="House">
+            <h3>RolePlay<br>HOUSE</h3>
+        </a>
     </main>
+
+    <section class="bottom-section">
+        <div class="description">
+            <h2>אודות השרת</h2>
+            <p>ברוכים הבאים ל-Blackzone Roleplay! כאן תוכלו למצוא את כל מה שצריך כדי לשדרג את הדמות שלכם, מרכבי יוקרה ועד לבתים המפוארים ביותר בעיר. כל תרומה עוזרת לנו לתחזק את השרת ולהביא לכם את החוויה הטובה ביותר.</p>
+        </div>
+        <div class="recent-payments">
+            <h2>תרומות אחרונות</h2>
+            <ul class="payments-list">
+                <li>IlayBRO - קנה רכב ספורט</li>
+                <li>Player2 - קנה VIP</li>
+                <li>Player3 - קנה וילה</li>
+            </ul>
+        </div>
+    </section>
 
     <script src="script.js"></script>
 </body>

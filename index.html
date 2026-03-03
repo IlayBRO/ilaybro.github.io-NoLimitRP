@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>חנות השרת - FiveM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>חנות השרת שלנו</h1>
+            <p>תמכו בשרת ושדרגו את חוויית המשחק שלכם</p>
+        </div>
+        <nav id="category-nav">
+            <button class="category-btn active" onclick="filterItems('all')">הכל</button>
+            <button class="category-btn" onclick="filterItems('vehicles')">רכבים</button>
+            <button class="category-btn" onclick="filterItems('houses')">בתים</button>
+        </nav>
+    </header>
+
+    <main>
+        <div class="store-grid" id="store-grid">
+            
+            <div class="item-card vehicles">
+                <img src="https://via.placeholder.com/300x150/2a2a2a/ffffff?text=תמונת+רכב" alt="רכב ספורט">
+                <div class="item-info">
+                    <h3>רכב ספורט אקסקלוסיבי</h3>
+                    <p class="price">₪50.00</p>
+                    <a href="https://paypal.me/YOUR_LINK" target="_blank" class="buy-btn">קנה עכשיו דרך PayPal</a>
+                </div>
+            </div>
+
+            <div class="item-card houses">
+                <img src="https://via.placeholder.com/300x150/2a2a2a/ffffff?text=תמונת+בית" alt="וילה">
+                <div class="item-info">
+                    <h3>וילה בווינווד</h3>
+                    <p class="price">₪120.00</p>
+                    <a href="https://paypal.me/YOUR_LINK" target="_blank" class="buy-btn">קנה עכשיו דרך PayPal</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
